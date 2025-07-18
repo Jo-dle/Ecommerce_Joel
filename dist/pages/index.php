@@ -184,6 +184,7 @@ $errorlogin = true;
               role="menu"
               data-accordion="false"
             >
+            <?php if (isset($_SESSION["rol"]) && $_SESSION["rol"] === "usuario"): ?>
               <li class="nav-item menu-open">
                 <a href="#" class="nav-link active">
                   <i class="nav-icon bi bi-speedometer"></i>
@@ -192,6 +193,7 @@ $errorlogin = true;
                     <i class="nav-arrow bi bi-chevron-right"></i>
                   </p>
                 </a>
+                
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
                     <a href="index.php?modulo=clientes" class="nav-link active">
@@ -205,12 +207,14 @@ $errorlogin = true;
                       <p> Usuarios </p>
                     </a>
                   </li>
+                  
                   <li class="nav-item">
                     <a href="index.php?modulo=productos" class="nav-link">
                     <i class="bi bi-basket-fill"></i>
                       <p>Productos</p>
                     </a>
                   </li>
+                  <?php endif; ?>
                   
                 </ul>
               </li>
@@ -231,7 +235,6 @@ if ($modulo == "inicio"){
 if ($modulo == "clientes"){
     include "clientes.php";
 }
-
 if ($modulo == "crearclientes"){
     include "crearclientes.php";
 }

@@ -17,6 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["entrar"])) {
             $_SESSION["email"] = $row["email"];
             $_SESSION["nombre"] = $row["nombre"];
             $_SESSION["tipo"] = $row["tipo"];
+            $_SESSION["rol"] = 'usuario';
             
             header("location:./index.php");
         }

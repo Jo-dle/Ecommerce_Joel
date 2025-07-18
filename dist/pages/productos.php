@@ -26,7 +26,9 @@ include_once "./controladores/productoscontroladores.php";
 <th>Precio</th>
 <th>Existencias</th>
 <th>Imagen</th>
+
 <th><a href= "index.php?modulo=crearproductos"> <i class="bi bi-database-fill-add"></i></th>
+
 
 </tr>
 </thead>
@@ -44,6 +46,7 @@ while ($row = mysqli_fetch_assoc($resultset)) {
     <td><img src="http://192.168.1.66/AdminLTE/dist/pages/img/<?php print $row ['imagen']?>" style="width: 50px; height. auto;"/> </td>
     <td><a href= "index.php?modulo=actualizarproductos&id=<?php echo $row ["id"]?>" > <i class="bi bi-pencil-square"></i>&nbsp;</i>   
     <a href= "index.php?modulo=borrarproductos&id=<?php echo $row ["id"]?>" ><i class="bi bi-trash-fill"></i></td>
+  
 </tr>
 <?php
 }

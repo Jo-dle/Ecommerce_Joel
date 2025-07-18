@@ -2,6 +2,12 @@
 
 include_once "./controladores/db_connect.php";
 
+session_start();
+if (!$_SESSION || $_SESSION['rol']!=='usuario') {
+  header ("Location:index.php");
+    exit;
+}
+
 $id = sanitizar($conexion, $_REQUEST ["id"]);
 
 try {

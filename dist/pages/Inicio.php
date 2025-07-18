@@ -44,7 +44,7 @@ if ($conexion){
                 <h1>Bienvenido!</h1>  
                 <div class= "row text-center my-4">
                 <div class="col-4">
-                  
+                  <?php if (isset($_SESSION["rol"]) && $_SESSION["rol"] === "usuario"):?>
                 <a href= "index.php?modulo=clientes" class="text-decoration-none text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
   <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
 </svg><p>Clientes</p> </a>  
@@ -62,10 +62,7 @@ if ($conexion){
                 <a href= "index.php?modulo=productos" class="text-decoration-none text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-basket-fill" viewBox="0 0 16 16">
   <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0z"/>
 </svg><p>Productos</p></a>
-            <div>
-                </div>
-
-
+<?php endif; ?>
               <!-- /.card-header -->
               </div>
               <!-- /.card-body -->

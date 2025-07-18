@@ -1,5 +1,5 @@
 <?php
-include_once "../../controladores/ventascontroladores.php";
+include_once "../../controladores/tienda/ventascontroladores.php";
 ?>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
