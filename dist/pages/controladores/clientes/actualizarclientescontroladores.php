@@ -1,6 +1,6 @@
 <?php
 
-include_once "db_connect.php";
+include_once "./controladores/db_connect.php";
 
 $id = sanitizar($conexion, $_REQUEST ["id"]);
 

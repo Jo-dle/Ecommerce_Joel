@@ -1,7 +1,7 @@
 
   <?php
 
-include_once "db_connect.php";
+include_once "./controladores/db_connect.php";
 
 if (isset($_REQUEST["guardar"])) 
 {

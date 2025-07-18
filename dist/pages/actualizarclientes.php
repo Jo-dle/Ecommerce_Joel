@@ -1,7 +1,6 @@
 
   <?php
-
-include_once "./controladores/actualizarclientescontroladores.php";
+include_once "./controladores/clientes/actualizarclientescontroladores.php";
 ?>
 
     <!-- Content Header (Page header) -->

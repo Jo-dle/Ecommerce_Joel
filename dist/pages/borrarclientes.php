@@ -1,5 +1,5 @@
 <?php
-include_once "./controladores/borrarclientescontroladores.php"
+include_once "./controladores/clientes/borrarclientescontroladores.php";
 ?>
 <!-- Content Header (Page header) -->
     <section class="content-header">
