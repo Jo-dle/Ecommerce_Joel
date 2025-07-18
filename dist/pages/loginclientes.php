@@ -101,7 +101,7 @@ fontsource/source-sans-3@5.0.12/index.css"
           <!-- /.social-auth-links -->
           <p class="mb-1"><a href="actualizarclientes.php">Olvidé mi contraseña</a></p>
           <p class="mb-0">
-            <a href="crearclientes.php" class="text-center"> Registrarse </a>
+            <a href="index.php?modulo=crearclientes" class="text-center"> Registrarse </a>
           </p>
         </div>
         <!-- /.login-card-body -->

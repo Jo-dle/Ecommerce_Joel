@@ -66,6 +66,7 @@ include_once "./controladores/clientes/crearclientescontroladores.php";
                 <input type="hidden" name="modulo" value="crearclientes">
                 <button type="submit" name="guardar" class="btn btn-primary"> Guardar</button>
                 <a class="btn btn-danger" href="index.php?modulo=clientes" role ="button">Cancelar</a>
+                <a class="btn btn-success position-fixed" href="loginclientes.php" role="button" style="right : 30px;">¿Ya tienes una cuenta?</a>
               </div> 
             </form>      
                 

@@ -1,5 +1,4 @@
 <?php
-
 include_once "../controladores/db_connect.php";
 //Para que funcione el carrito como objeto en la sesión tenemos que incluir la definición del objeto antes de abrir la sesión
 include_once "../controladores/tienda/carrito";

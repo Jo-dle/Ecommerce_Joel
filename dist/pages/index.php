@@ -265,6 +265,9 @@ if ($modulo == "perfil"){
 if ($modulo == "ventas"){
   include "ventas.php";
 }
+if ($modulo == "tienda"){
+  include "./tienda/t_index.php";
+}
 ?>  
 
       </main>
