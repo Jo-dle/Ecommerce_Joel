@@ -259,6 +259,9 @@ if ($modulo == "productos"){
 if ($modulo == "perfil"){
   include "perfil.php";
 }
+if ($modulo == "ventas"){
+  include "ventas.php";
+}
 ?>  
 
       </main>
